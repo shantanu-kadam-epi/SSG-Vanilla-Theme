@@ -1,0 +1,9 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+<!-- <h1>{{ .Type }}</h1>  -->
+<!-- <input type="hidden" name="formConfig" value="{{ .Site.Params.twitter }}"> -->
+<div id="form" class="hidden"></div>
+<!-- {{ .Content }} -->
+{{ partial "script_thankyou.html" . }}
+{{ end }}

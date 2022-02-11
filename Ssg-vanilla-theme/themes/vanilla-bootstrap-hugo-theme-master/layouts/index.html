@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<div id="home-jumbotron" class="jumbotron text-center">
+{{ with .Content }}
+  <h1>{{ $.Page.Title }}</h1>
+  {{ . }}
+{{ else }}
+  <h1>{{ .Site.Title }}</h1>
+  <p class="font-125">{{ .Site.Params.homeText | markdownify }}</p>
+{{ end }}
+</div> 
+<input type="hidden" name="formConfig" value="{{ .Site.Params.twitter }}">
+<input type="hidden" name="uuid" value="{{ .Site.Params.uuid }}">
+<input type="hidden" name="uuid_name" value="{{ .Site.Params.uuid_name }}">
+<input type="hidden" name="recaptcha_sitekey" value="{{ .Site.Params.recaptcha_sitekey }}">
+<input type="hidden" name="i18n_data" value="{{ .Site.Params.i18n_data }}">
+    <div id="form" class="hidden">
+{{ end }}

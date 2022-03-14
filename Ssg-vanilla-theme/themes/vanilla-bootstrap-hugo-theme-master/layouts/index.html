@@ -8,11 +8,13 @@
   <h1>{{ .Site.Title }}</h1>
   <p class="font-125">{{ .Site.Params.homeText | markdownify }}</p>
 {{ end }}
-</div> 
+</div>
 <input type="hidden" name="formConfig" value="{{ .Site.Params.twitter }}">
 <input type="hidden" name="uuid" value="{{ .Site.Params.uuid }}">
 <input type="hidden" name="uuid_name" value="{{ .Site.Params.uuid_name }}">
 <input type="hidden" name="recaptcha_sitekey" value="{{ .Site.Params.recaptcha_sitekey }}">
 <input type="hidden" name="i18n_data" value="{{ .Site.Params.i18n_data }}">
     <div id="form" class="hidden">
+      <script type="text/javascript" src="{{ "js/element_updater.js" | absURL }}"></script>
 {{ end }}
+

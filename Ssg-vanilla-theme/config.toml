@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://localhost:1313/'
 languageCode = 'en-us'
 title = 'Welcome to PieEye'
 theme = 'vanilla-bootstrap-hugo-theme-master'
@@ -12,7 +12,6 @@ post = "/:filename/"
 includeBootstrapJs = false
 showActiveNav = true
 containerMaxWidth = "700px !important"
-backgroundcolor = "black"
 dateFormat = "Jan 2, 2006"
 homeText = "Welcome to the Vanilla theme demo. Have a look around. Maybe even eat some ice cream."
 katex = true
@@ -64,10 +63,8 @@ dsr_req_id = '51a9c2e4-7818-46a7-9001-b77c2227f7e2'
 
 status_details_data = '{ "requestId": "9104c4bb-ea8b-41ac-a3b5-445f8e16796e", "companyName": "flipkart", "firstName": "shantanu", "lastName": "kadam", "email": "shantanu.kadam@extrapreneursindia.com", "requestType": "access", "requestor": "customer", "received": "2022-02-09T09:07:49Z", "dataSource": { "totalDataSources": 1, "totalDatasources": 1, "totalMatches": 1, "matchedRecords": [ { "email": "shantanu.kadam@extrapreneursindia.com", "phone": "", "lastname": "kadam", "firstname": "shantanu", "Datasource Name": "acuity", "Table Name": "Appointments" } ] } }'
 
-hideFooter = false
-footerText = "Powered by [PieEye Inc.](https://www.pii.ai)"
-showMenu = true
-logoUrl = 'https://app.dev.pii.ai/img/brand/pieeye_logo-2-dark.png'
+config_data = '{ "color": { "backgroundcolor": "#000000", "headerBackground": "#000000", "footerBackground": "#000000", "fontcolor": "white", "navText": "#ffffff", "footerText": "#ffffff" }, "font": { "bodyFontFamily": "poppins,Arial,sans-serif" }, "contents": { "hideFooter": false, "footerText": "Powered by PieEye Inc.", "hideMenu": false, "logoUrl": "https://app.dev.pii.ai/img/brand/pieeye_logo-2-dark.png" } }'
+
 [[menu.nav]]
 name = "DSR Request"
 pre = "home"

@@ -16,10 +16,10 @@
             <div class="text-center mt-4">
                 <h4>Your identity needs to be confirmed..</h4>
                 <h5>Your DSR Request ID</h5>
-                <div id="sa" class="text-dark"></div>
+                <div id="sa" class=""></div>
             </div>
             <div class="pb-5">
-                <p class="text-dark mt-4 pb-5">Please check your email for confirmation, click verify and we will start your request.</p>
+                <p class="mt-4 pb-5">Please check your email for confirmation, click verify and we will start your request.</p>
             </div>
         </div>
     </div>
@@ -27,6 +27,7 @@
 <script>
     feather.replace()
 </script>
+<script type="text/javascript" src="http://localhost:1313/js/element_updater.js"></script>
 {{ if eq .Site.Params.includeBootstrapJs true }}
 <script src="{{ "js/jquery-3.3.1.slim.min.js" | absURL }}"></script>
 <script src="{{ "js/bootstrap.bundle.min.js" | absURL }}"></script>

@@ -1,6 +1,5 @@
-{{ if eq .Site.Params.showMenu true }}  
 <div id="nav-border" class="container">
-  <img src= "{{ .Site.Params.logoUrl }}" />
+  <img id="logo" src= "" style="height: 60px;"/>
   <nav id="nav" class="nav justify-content-center" style="display: inline-flex;">
     {{ $showActiveNav := .Site.Params.showActiveNav }}
     {{ $currentPage := . }}
@@ -22,4 +21,3 @@
     {{ end }}
   </nav>
 </div>
-{{ end }}
